@@ -48,30 +48,73 @@
                         width="100%"
                         height="500px"
                         alt=""
+                        style="border: 1px solid #2d7a9c; margin-bottom: 16px;"
                 >
                 </td>
             </tr>
 
-            <!-- biography section-->
-            <tr style="height: 450px;">
+            <!-- contact form section-->
+            <tr style="width: 100vh; margin-top: 50px;">
                 <td style="padding-left: 20vh;">
-                    <h1>I'm <span style="color: #FF414D;">Simon Lephoto</span></h1>
-                    <p>
-                        I have a diploma in information technology<br />
-                        nostrum pariatur reprehenderit culpa tenetur voluptates, 
-                        dignissimos tempore <br />
-                        autem cumque excepturi voluptatibus itaque exercitationem 
-                        libero quibusdam? <br />
-                        Non at esse ad?
-                    </p>
-                </td>
-                <td align="right" style="padding-right: 20vh; padding-top: 30px; padding-bottom: 30px; margin-top: 20px;">
-                    <img
-                        src="./assets/imgs/pexels-vojtech-okenka-399772.jpg"
-                        width="250px"
-                        height="250px"
-                        style="border-radius: 50%; object-fit: cover; border: 5px solid #2d7a9c;"
-                        alt="">
+                    <h1 style="text-align: center; color: #2d7a9c; margin-bottom: 30px;">Contact Me</h1>
+                    <div class="container" >
+                        <form action="action_page.php">
+                      
+                          <label for="fname"
+                            style="margin-left: 200px;"
+                          >First Name</label> <br>
+                          <input 
+                            type="text" 
+                            id="fname" 
+                            name="firstname" 
+                            placeholder="Your name.."
+                            style="
+                                width: 100vh;
+                                padding: 12px;
+                                border: 1px solid #ccc;
+                                margin-bottom: 16px;
+                                margin-left: 200px;
+                            "
+                            > <br>
+                      
+                          <label for="lname" style="margin-left: 200px;">Last Name</label> <br>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.."
+                            style="
+                                width: 100vh;
+                                padding: 12px;
+                                border: 1px solid #ccc;
+                                margin-bottom: 16px;
+                                margin-left: 200px;
+                            "> <br>
+                      
+                          <label for="subject" style="margin-left: 200px;">Subject</label> <br>
+                          <textarea id="subject" name="subject" placeholder="Write something.." 
+                            style="
+                                height:200px;
+                                width: 100vh;
+                                padding: 12px;
+                                border: 1px solid #ccc;
+                                margin-bottom: 16px;
+                                margin-left: 200px;
+
+                            "></textarea> <br>
+                      
+                          <input
+                            type="submit" 
+                            value="Submit"
+                            style="
+                                background-color: #2d7a9c;;
+                                color: white;
+                                padding: 12px 20px;
+                                border: none;
+                                border-radius: 4px;
+                                cursor: pointer;
+                                margin-left: 200px;
+                                margin-bottom: 16px;
+                            ">
+                      
+                        </form>
+                      </div>
                 </td>
             </tr>
         </table>
@@ -99,7 +142,6 @@
                     style="
                         width:250px; 
                         height:200px; 
-                        background:green;
                         margin-right: 140px;
                         margin-top: 50px;
                         ">
@@ -116,9 +158,9 @@
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                     
                     <!-- Add font awesome icons -->
-                    <a href="#" class="fa fa-facebook" style="width: 50px; font-size: 25px;"></a>
-                    <a href="#" class="fa fa-twitter" style="width: 50px; font-size: 25px;"></a>
-                    <a href="#" class="fa fa-instagram" style="width: 50px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-facebook" style="width: 50px; font-size: 25px; color: #2d7a9c; text-decoration: none;"></a>
+                    <a href="#" class="fa fa-twitter" style="width: 50px; font-size: 25px; color: #2d7a9c; text-decoration: none;"></a>
+                    <a href="#" class="fa fa-instagram" style="width: 50px; font-size: 25px; color: #2d7a9c; text-decoration: none;"></a>
                 </td>
             </tr>
         </table>
