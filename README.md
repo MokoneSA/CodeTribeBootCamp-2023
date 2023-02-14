@@ -1,5 +1,6 @@
 CodeTribe Bootcamp 2023
 
+
 Lesson 1 Task
 
 Instruction 1(For HTML)
@@ -20,6 +21,7 @@ the above design snippet. The pages must have content.
 	b. Contact us - come up with your own content on how users will contact you.
 
 3. In the end, you must have Home, About me, and the Contact us pages on your project.
+
 
 
 Lesson 2 Task
