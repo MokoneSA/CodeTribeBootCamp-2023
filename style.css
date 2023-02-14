@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+    background-color: whitesmoke;
+}
+
+#main_table {
+    width: 100%;
+}
+
+p {
+    padding: 10px;
+}
+
+
+/* About me page styling */
+
+#work_exp {
+    height: 450px;
+}
+
+.skillsList {
+    width: 30%;
+}
+
+.icoImg {
+    width: 100px;
+    height: 100px;
+}
+
+.subject {
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.prof {
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Contact me page styling */
+
+#contact_header {
+    text-align: center;
+    color: #2d7a9c;
+    margin-bottom: 20px;
+}
+
+#table_icons {
+    width: 25px;
+    margin-top: -100px;
+    margin-left: 50px;
+
+}
+
+/* icons styling */
+.contact_icons {
+    width: 25px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+/* styling the form layout */
+.form_styling {
+    margin-right: 100px;
+    padding-bottom: 10px;
+}
+
+/* styling the input fields */ 
+#fname, #lname {
+    width: 70vh;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+/* Styling the text area */
+#subject {
+    height:200px;
+    width: 70vh;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+/* styling the submit button */
+#submit {
+    background-color: #2d7a9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+
+/* Footer */
+
+#footer_table {
+    width: 100%; 
+    background-color: #022534;
+}
+
+#footer_social {
+    margin-left: 140px;
+}
+
+#footer_paragragh {
+    color: white;
+}
+
+#map {
+    width:250px; 
+    height:200px; 
+    margin-right: 140px;
+    margin-top: 50px;
+}
+
+.fa {
+    width: 50px; 
+    font-size: 100px; 
+    color: white; 
+    text-decoration: none;
+}

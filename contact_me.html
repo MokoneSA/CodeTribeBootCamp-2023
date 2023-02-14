@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>CodeTribe - Home</title>
 </head>
 <body>
@@ -48,70 +49,51 @@
                         width="100%"
                         height="500px"
                         alt=""
-                        style="border: 1px solid #2d7a9c; margin-bottom: 16px;"
-                >
+                        style="border: 1px solid #2d7a9c;"
+                    >
+                </td>
+            </tr>
+            <tr style="width: 100vh;">
+                <td colspan="2">
+                    <h1 align="center" id="contact_header">Contact Me</h1>
                 </td>
             </tr>
 
             <!-- contact form section-->
-            <tr style="width: 100vh; margin-top: 50px;">
+            <tr style="width: 100vh; margin-top: 50px;" style="background-image: url(./assets/imgs/pexels-ricardo-esquivel-1662159.jpg);">
+                <!-- left side form elements -->
+                <td style="width: 45vh;">
+                        <table id="table_icons">
+                            <tr>
+                                <td><img class="contact_icons" src="./assets/icons/home.png" alt="home icon"></td>
+                                <td>22377 Mashabela Street, Gauteng, Benoni, Etwatwa, 1519</td>
+                            </tr>
+                            <tr>
+                                <td><img class="contact_icons" src="./assets/icons/email.png" alt="email icon"></td>
+                                <td>simonlephotojr@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><img class="contact_icons" src="./assets/icons/telephone-call.png" alt="telephone icon"></td>
+                                <td>+27 71 313 2387</td>
+                            </tr>
+                        </table>
+                </td>
+                <!-- right side form elements -->
                 <td style="padding-left: 20vh;">
-                    <h1 style="text-align: center; color: #2d7a9c; margin-bottom: 30px;">Contact Me</h1>
                     <div class="container" >
                         <form action="action_page.php">
                       
-                          <label for="fname"
-                            style="margin-left: 200px;"
-                          >First Name</label> <br>
-                          <input 
-                            type="text" 
-                            id="fname" 
-                            name="firstname" 
-                            placeholder="Your name.."
-                            style="
-                                width: 100vh;
-                                padding: 12px;
-                                border: 1px solid #ccc;
-                                margin-bottom: 16px;
-                                margin-left: 200px;
-                            "
-                            > <br>
+                          <label class="form_styling" for="fname">First Name</label> <br>
+                          <input class="form_styling" type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
                       
-                          <label for="lname" style="margin-left: 200px;">Last Name</label> <br>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name.."
-                            style="
-                                width: 100vh;
-                                padding: 12px;
-                                border: 1px solid #ccc;
-                                margin-bottom: 16px;
-                                margin-left: 200px;
-                            "> <br>
+                          <label class="form_styling" for="lname" >Last Name</label> <br>
+                          <input  class="form_styling" type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
                       
-                          <label for="subject" style="margin-left: 200px;">Subject</label> <br>
-                          <textarea id="subject" name="subject" placeholder="Write something.." 
-                            style="
-                                height:200px;
-                                width: 100vh;
-                                padding: 12px;
-                                border: 1px solid #ccc;
-                                margin-bottom: 16px;
-                                margin-left: 200px;
-
-                            "></textarea> <br>
+                          <labelv class="form_styling" for="subject">Subject</label> <br>
+                          <textarea class="form_styling" id="subject" name="subject" placeholder="Write something..">
+                          </textarea> <br>
                       
-                          <input
-                            type="submit" 
-                            value="Submit"
-                            style="
-                                background-color: #2d7a9c;;
-                                color: white;
-                                padding: 12px 20px;
-                                border: none;
-                                border-radius: 4px;
-                                cursor: pointer;
-                                margin-left: 200px;
-                                margin-bottom: 16px;
-                            ">
+                          <input id="submit" type="submit" value="Submit" >
                       
                         </form>
                       </div>
@@ -122,12 +104,12 @@
 
     <!-- This is our footer and it has our quick links and a map -->
     <footer>
-        <table style="width: 100%; height: 100px; background-color: #022534;">
+        <table id="footer_table">
             <!-- address and map section-->
             <tr>
                 <td style="padding-left: 20vh;">
                     <div style=" margin-top: -50px;" >
-                        <p style="color: white;">22377 Mashabela Street <br>
+                        <p id="footer_paragragh" >22377 Mashabela Street <br>
                         Etwatwa Ext.1 <br>
                         Benoni <br>
                         1519 <br>
@@ -137,30 +119,24 @@
 
                 <!-- Adding a map to the site -->
                 <td align="right" colspan="2">
-                    <div 
-                    id="map" 
-                    style="
-                        width:250px; 
-                        height:200px; 
-                        margin-right: 140px;
-                        margin-top: 50px;
-                        ">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1263881184045!2d28.031699815642575!3d-26.192566569862876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950b9300000001%3A0x335d35f228da3ccd!2sRosebank%20College%20%7C%20Braamfontein%20Campus!5e0!3m2!1sen!2sza!4v1675688180787!5m2!1sen!2sza" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>  
-                        
+                    <div id="map" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.076690047037!2d28.453115115641197!3d-26.129042367268926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953a3911675e31%3A0x62bc9dffd80008d1!2s2377%20Mashabela%20St%2C%20Etwatwa%2C%20Benoni%2C%201519!5e0!3m2!1sen!2sza!4v1676354464487!5m2!1sen!2sza" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>    
                 </td>
             </tr>
 
             <!-- social media button section-->
-            <tr style="height: 80px;">
-                <td style="padding-left: 20vh;">
-                    <!-- Add icon library -->
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    
-                    <!-- Add font awesome icons -->
-                    <a href="#" class="fa fa-facebook" style="width: 50px; font-size: 25px; color: #2d7a9c; text-decoration: none;"></a>
-                    <a href="#" class="fa fa-twitter" style="width: 50px; font-size: 25px; color: #2d7a9c; text-decoration: none;"></a>
-                    <a href="#" class="fa fa-instagram" style="width: 50px; font-size: 25px; color: #2d7a9c; text-decoration: none;"></a>
+            <tr style="height: 60px;">
+                <td style="height: 10px;" colspan="2">
+                    <div id="footer_social">
+                        <!-- Add icon library -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        
+                        <!-- Add font awesome icons -->
+                        <a href="#" class="fa fa-facebook social_icons"></a>
+                        <a href="#" class="fa fa-twitter social_icons"></a>
+                        <a href="#" class="fa fa-instagram social_icons"></a>
+                    </div>
                 </td>
             </tr>
         </table>
