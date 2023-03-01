@@ -1,5 +1,6 @@
 CodeTribe Bootcamp 2023
 
+
 Lesson 1 Task
 
 Instruction 1(For HTML)
@@ -22,8 +23,11 @@ the above design snippet. The pages must have content.
 3. In the end, you must have Home, About me, and the Contact us pages on your project.
 
 
+
 Lesson 2 Task
+
 Re: Instruction 2(For CSS)
+
 1. After successfully completing your “home”, “contact” and “about” pages:
 	a. Use CSS to style your website according to the above design snippet.
 	b. Add your own creativity to make the website more appealing to the eye and to the
