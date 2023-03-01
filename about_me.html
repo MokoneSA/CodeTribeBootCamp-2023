@@ -4,42 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>CodeTribe - Home</title>
 </head>
 <body>
-
+    <div id="main_container">
     <!-- This is the header it has our logo and navigation bar -->
-    <head >
+    <header >
         <div>
             <table style="width: 100%;">
                 <tr>
-                    <td>
-                       <a href="">
-                        <img src="./assets/logo/logo.jpg" width="100px"alt="logo" style="margin-top: -11px;">
-                       </a>
-                    </td>
+                    <td id="my_logo">
+                        <a href="index.html"><span>SIMON</span> LEPHOTO<span>.</span></a>
+                     </td>
                     <td align="right">
-                        <nav
-                            style="
-                                margin-right: 50px;
-                                margin-top: 9px;
-                                margin-bottom: 16px;
-                                margin-left: 50px;
-                            "
-                        >
+                        <nav>
                             <a href="index.html" style="padding-right: 10px; text-decoration: none;">Home</a>
-                            <a href="about_me.html" style="padding-right: 10px; text-decoration: none;">About Me</a>
+                            <a href="about_me.html" class="active" style="padding-right: 10px; text-decoration: none;">About Me</a>
                             <a href="contact_me.html" style="text-decoration: none;">Contact Me</a>
                         </nav>
                     </td>
                 </tr>
             </table>
         </div>
-    </head>
+    </header>
 
     <!-- This is the main and it has the biography and pictures -->
-    <main >
+    <main id="main_table">
         <table style="width: 100%;">
             <!-- banner section-->
             <tr>
@@ -49,7 +41,7 @@
                         width="100%"
                         height="500px"
                         alt=""
-                        style="border: 1px solid #2d7a9c; margin-bottom: 16px;"
+                        style="border: 1px solid #212B3B; margin-bottom: 16px;"
                 >
                 </td>
             </tr>
@@ -57,7 +49,7 @@
             <!-- About me section-->
             <tr>
                 <td colspan="2">
-                    <h1 align="center">About Me</h1>
+                    <h1 align="center" class="main_heading">About Me</h1>
                 </td>
             </tr>
 
@@ -81,14 +73,8 @@
             <tr>
                 <td colspan="2">
                     <div align="center" style="height: 200px; margin-top: -70px;">
-                        <h3>Hi there!</h3>
-                        <p>I'm an aspiring web developer, I'm currently looking for 
-                            opportunities <br> to upskill myself. I have a basic knowledge 
-                            of html and css, I believe <br> being part of this boot camp will
-                            provide me the opportunity to reach <br> new heights in my career.
-                            I am looking forward to being part of the <br> official program in
-                             the coming months.
-                        </p>
+                        <h3 id="summary_header" class="heading"></h3>
+                        <p id="summary_p"></p>
                     </div>
                 </td>
             </tr>
@@ -97,7 +83,7 @@
             <tr>
                 <td colspan="2">
                     <div align="center">
-                        <h3>Skills</h3>
+                        <h2 class="main_heading">Skills</h2>
                         <div>
                             <table class="skillsList">
                                 <tr>
@@ -110,7 +96,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Level 3</p>
+                                        <p class="skill_p">Level 3</p>
                                     </td>
                                 </tr>
                             </table>    
@@ -127,7 +113,7 @@
                                 </tr>
                                 <tr>
                                     <td class="prof">
-                                        <p>Level 3</p>
+                                        <p class="skill_p">Level 3</p>
                                     </td>
                                 </tr>
                             </table>
@@ -144,7 +130,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Level 2</p>
+                                        <p class="skill_p">Level 2</p>
                                     </td>
                                 </tr>
                             </table>
@@ -157,13 +143,14 @@
             <tr style="height: 900px;">
                 <td colspan="2" style="margin-top: -200px;">
                     <div id="work_exp" align="center">
-                        <h2>Work Experience</h2>
-                        <table align="center" >
+                        <h2 id="work_exp_header" class="main_heading"></h2>
+                        <table align="center">
                             <tr>
                                 <td colspan="2" style="width: 100%;">
-                                    <h3>Crusader Logistics</h3>
-                                    <h4>Position: Receiving Supervisor, June 2018 – September 2018</h4>
-                                    <h5>Responsibilities:</h5>
+                                    <!-- First experiance details -->
+                                    <h3 id="first_comp" class="heading"></h3>
+                                    <h4 id="first_position" class="heading"></h4>
+                                    <h5 id="first_respons" class="heading"></h5>
                                     <ul>
                                         <li>Receive and record the receipt of shipments in the warehouse management system.</li>
                                         <li>Oversee incoming and outgoing shipping activities to ensure accuracy.</li>
@@ -177,9 +164,10 @@
                             </tr>
                             <tr>
                                 <td colspan="2" style="width: 100%;">
-                                    <h3>Crusader Logistics</h3>
-                                    <h4>Position: IT and Stock Administrator, July 2016 – May 2018</h4>
-                                    <h5>Responsibilities:</h5>
+                                    <!-- Second experiance details -->
+                                    <h3 id="second_comp" class="heading"></h3>
+                                    <h4 id="second_position" class="heading"></h4>
+                                    <h5 id="second_respons" class="heading"></h5>
                                     <ul>
                                         <li>Monitoring and maintaining networks.</li>
                                         <li>Upgrading, installing and configuring new hardware and software to meet company objectives.</li>
@@ -200,43 +188,46 @@
 
     <!-- This is our footer and it has our quick links and a map -->
     <footer>
-        <table id="footer_table" >
+        <table id="footer_table" style="width: 100%;">
             <!-- address and map section-->
             <tr>
-                <td style="padding-left: 20vh;">
-                    <div style=" margin-top: -50px;" >
-                        <p id="footer_paragragh">22377 Mashabela Street <br>
-                        Etwatwa Ext.1 <br>
-                        Benoni <br>
-                        1519 <br>
-                        </p>
+                <td style="padding-left: 20vh; width: 50%;">
+                    <div style="margin-top: -20px;" >
+                        <ul id="footer_list">
+                            <li>22377 Mashabela Street</li>
+                            <li>Etwatwa Ext.1</li>
+                            <li>Benoni</li>
+                            <li>1519</li>
+                            <li>071 3132 2387</li>
+                        </ul>
                     </div>
                 </td>
 
                 <!-- Adding a map to the site -->
-                <td align="right" colspan="2">
-                    <div id="map" >
+                <td align="right" rowspan="2" style="width: 50%;">
+                    <div id="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.076690047037!2d28.453115115641197!3d-26.129042367268926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953a3911675e31%3A0x62bc9dffd80008d1!2s2377%20Mashabela%20St%2C%20Etwatwa%2C%20Benoni%2C%201519!5e0!3m2!1sen!2sza!4v1676354464487!5m2!1sen!2sza" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>  
-                        
                 </td>
             </tr>
-
-            <!-- social media button section-->
-            <tr style="height: 60px;">
-                <td style="height: 10px;" colspan="2">
-                    <div id="footer_social">
-                        <!-- Add icon library -->
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                        
-                        <!-- Add font awesome icons -->
-                        <a href="#" class="fa fa-facebook social_icons"></a>
-                        <a href="#" class="fa fa-twitter social_icons"></a>
-                        <a href="#" class="fa fa-instagram social_icons"></a>
+            <tr>
+                <!-- Add font awesome icons -->
+                <td style="width:50%; padding-left: 20vh;">
+                    <div  id="footer_social">
+                        <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-twitter" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-instagram" style="font-size: 20px;"></a>
                     </div>
+                </td>
+            </tr>
+            <tr style="width:100%; background-color: #37465B;" >
+                <td colspan="2">
+                    <p id="p_footer">Copyright &copy; 2023. All Rights Reserved.</p>
                 </td>
             </tr>
         </table>
     </footer>
+    <script src="./scripts/aboutme.js"></script>
+    </div>
 </body>
 </html>

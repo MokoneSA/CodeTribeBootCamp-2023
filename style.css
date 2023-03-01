@@ -1,17 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+/* =============================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
-    background-color: whitesmoke;
+    background-color: whitesmoke ;
 }
+
+#main_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* ==================== Header styling ==================== */
+
+header {
+    border-bottom: 1px solid grey;
+    background-color: #212B3B;
+}
+
+#my_logo a {
+    color: #CCC ;
+    margin-left: 10px;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+#my_logo span {
+    color: #ff4d05;
+}
+
+nav {
+    margin-right: 15px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 50px;
+}
+
+nav a {
+    color: #CCC ;
+    padding-right: 10px; 
+    text-decoration: none;
+}
+
+a.active {
+   color: #ff4d05;
+}
+
+
+/* #6a737b */
+/* ==================== Index page styling ==================== */
 
 #main_table {
     width: 100%;
+    background-color: #EFEEEE;
 }
 
-/* About me page styling */
+#index_main_heading {
+    color: #ff4d05;
+}
+
+#index_main_paragraph {
+    color: #8b9c95;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/* ==================== About me page styling ==================== */
+
+.main_heading {
+    color: #ff4d05;
+}
 
 #work_exp {
-    height: 450px;
+    height: 600px;
 }
 
 .skillsList {
@@ -24,6 +95,7 @@ body {
 }
 
 .subject {
+    color: #8b9c95;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
 }
@@ -33,38 +105,79 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#summary_header {
+    color: #ff4d05;
+}
 
-/* Contact me page styling */
+#summary_p {
+    color: #8b9c95;
+    font-size: 18px;
+}
+
+
+.skill_p {
+    color: #8b9c95;
+}
+
+ul {
+    margin-bottom: 25px;
+}
+
+ul li {
+    color: #8b9c95;
+    list-style: none;
+    padding: 5px;
+
+}
+
+.heading {
+    color: #8b9c95;
+    margin-bottom: 15px;
+}
+
+/* ==================== Contact me page styling ==================== */
+
+
+.container_form {
+    margin-top: 60px;
+    margin-left: 100px;
+}
 
 #contact_header {
     text-align: center;
-    color: #2d7a9c;
+    color: #ff4d05;
     margin-bottom: 20px;
 }
 
 #table_icons {
-    width: 25px;
-    margin-top: -100px;
-    margin-left: 50px;
-
+    width: 20px;
+    margin-top: -140px;
+    margin-left: 100px;
 }
 
-/* icons styling */
-.contact_icons {
-    width: 25px;
+.table_icons_p {
+    color: #8b9c95;
+    font-family: 'Roboto', sans-serif;
+    margin-right: -50px;
+}
+
+i.fa {
+    color: #ff4d05;
+    font-size: 25px; 
+    margin-right: -2px; 
     padding: 10px;
-    margin-left: 20px;
+}
+
+
+.form_label {
+    color: #8b9c95;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* styling the form layout */
 .form_styling {
-    margin-right: 100px;
-    padding-bottom: 10px;
-}
-
-/* styling the input fields */ 
-#fname, #lname {
-    width: 70vh;
+    width: 50vh;
     padding: 12px;
     border: 1px solid #ccc;
     margin-bottom: 16px;
@@ -74,52 +187,65 @@ body {
 /* Styling the text area */
 #subject {
     height:200px;
-    width: 70vh;
+    width: 50vh;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     margin-top: 10px;
     margin-bottom: 16px;
 }
 
 /* styling the submit button */
 #submit {
-    background-color: #2d7a9c;
-    color: white;
+    background-color: #ff4d05;
+    color: #CCC;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 16px;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 
 
-/* Footer */
+/* ====================  Footer styling ==================== */
+
 
 #footer_table {
-    width: 100%; 
-    background-color: #022534;
+    width: 100%;
+    background-color: #212B3B;
+    height: 280px;
+    border-bottom: 1px solid #37465B;
 }
 
 #footer_social {
-    margin-left: 140px;
+    margin-bottom: 20px;
+    margin-left: -30px;
 }
 
-#footer_paragragh {
-    color: white;
+#footer_list {
+    color: #CCC;
+    margin-top: 10px;
+    margin-left: -30px;
+    list-style: none;
+    margin-bottom: -20px;
 }
+
 
 #map {
     width:250px; 
     height:200px; 
-    margin-right: 140px;
-    margin-top: 50px;
+    margin-right: 120px;
+    margin-top: 10px;
 }
 
 .fa {
-    width: 50px; 
-    font-size: 100px; 
-    color: white; 
+    color: #ff4d05; 
     text-decoration: none;
+    margin-right: 30px;
+}
+
+#p_footer {
+    text-align: center;
+    color: white;
+    width: 100%;
 }
